@@ -5,6 +5,5 @@ import pandas as pd
 import seaborn as sns
 
 iris = sns.load_dataset('iris')
-fig = plt.figure(figsize=(10, 4))
 sns.boxplot(data=iris)
-st.pyplot(fig)
+
