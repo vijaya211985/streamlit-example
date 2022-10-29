@@ -33,14 +33,14 @@ def midpoint(ax, ay, bx, by):
       F = F + (h-w)
       y = y + 1
 
-  xcoordinates.append(x)
-  ycoordinates.append(y)
-  st.header(f"x = {x}, y = {y}")
+    xcoordinates.append(x)
+    ycoordinates.append(y)
+    st.header(f"x = {x}, y = {y}")
     
 
-plt.plot(xcoordinates, ycoordinates)
-plt.show()
-st.pyplot(fig)
+  plt.plot(xcoordinates, ycoordinates)
+  plt.show()
+  st.pyplot(fig)
 
 if __name__=="__main__":
   print("Enter the starting point of x: ")
