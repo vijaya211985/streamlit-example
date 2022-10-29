@@ -1,7 +1,10 @@
 
 
 """Midpoint"""
-
+import streamlit as st
+import numpy as np
+import pandas as pd
+import seaborn as sns
 import matplotlib.pyplot as plt
 plt.title("Midpoint Line Algorithm")
 plt.xlabel("X-Axis")
