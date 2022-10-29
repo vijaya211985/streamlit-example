@@ -6,9 +6,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-plt.title("Midpoint Line Algorithm")
-plt.xlabel("X-Axis")
-plt.ylabel("Y-Axis")
+
 
 def midpoint(ax, ay, bx, by):
   w = bx - ax
@@ -18,7 +16,7 @@ def midpoint(ax, ay, bx, by):
   x = ax
   y = ay
 
-  print(f"x = {x}, y = {y}")
+  st.header(f"x = {x}, y = {y}")
 
   xcoordinates = [x]
   ycoordinates = [y]
@@ -34,11 +32,15 @@ def midpoint(ax, ay, bx, by):
 
     xcoordinates.append(x)
     ycoordinates.append(y)
-    print(f"x = {x}, y = {y}")
+    st.header(f"x = {x}, y = {y}")
     
-  plt.plot(xcoordinates, ycoordinates)
-  plt.show()
-
+fig = plt.figure(figsize=(10, 4))
+plt.title("Midpoint Line Algorithm")
+plt.xlabel("X-Axis")
+plt.ylabel("Y-Axis")
+plt.plot(xcoordinates, ycoordinates)
+plt.show()
+st.pyplot(fig)
 
 if __name__=="__main__":
   print("Enter the starting point of x: ")
