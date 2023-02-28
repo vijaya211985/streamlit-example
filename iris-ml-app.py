@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from scikit import datasets
-from scikit-learn.ensemble import RandomForestClassifier
+from scikit.ensemble import RandomForestClassifier
 
 st.write("""
 # AirAsia 
