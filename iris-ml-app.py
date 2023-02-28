@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from scikit-learn import datasets
+from scikit import datasets
 from scikit-learn.ensemble import RandomForestClassifier
 
 st.write("""
